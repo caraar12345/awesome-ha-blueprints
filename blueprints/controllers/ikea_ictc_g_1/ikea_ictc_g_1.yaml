@@ -147,9 +147,9 @@ variables:
       rotate_stop: [stop]
       rotate_right: [move_with_on_off_0_70, move_with_on_off_0_195]
     zigbee2mqtt:
-      rotate_left: [rotate_left]
+      rotate_left: [rotate_left, rotate_left_quick]
       rotate_stop: [rotate_stop]
-      rotate_right: [rotate_right]
+      rotate_right: [rotate_right, rotate_right_quick]
   # pre-choose actions for buttons based on configured integration
   # no need to perform this task at automation runtime
   rotate_left: '{{ actions_mapping[integration_id]["rotate_left"] }}'
